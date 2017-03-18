@@ -4,7 +4,7 @@
  * @description :: User representation
  * @docs        :: http://sailsjs.org/#!documentation/models
  */
- 
+
 var bcrypt = require('bcrypt');
 
 var User = {
