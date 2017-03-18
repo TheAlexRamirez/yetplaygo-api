@@ -11,7 +11,7 @@ module.exports = {
 	 if (req.body.password !== req.body.confirmPassword) {
 		 return res.json(401, {err: 'Password doesn\'t match!'});
 	 }
-	 Users.create(req.body).exec(function (err, user) {
+	 User.create(req.body).exec(function (err, user) {
 		 if (err) {
 			 return res.json(err.status, {err: err});
 		 }
