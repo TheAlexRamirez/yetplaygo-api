@@ -10,7 +10,7 @@ module.exports = {
   attributes: {
 
     game  : { model: 'game'},
-    users : { collection : 'user'},
+    users : { model : 'user'},
     startsAt  : { type: 'date' },
     endsAt  : { type: 'date'}
   }

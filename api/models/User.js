@@ -1,3 +1,12 @@
+/**
+ * Users.js
+ *
+ * @description :: User representation
+ * @docs        :: http://sailsjs.org/#!documentation/models
+ */
+ 
+var bcrypt = require('bcrypt');
+
 var User = {
   // Enforce model schema in the case of schemaless databases
   schema: true,
