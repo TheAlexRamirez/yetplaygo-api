@@ -1,6 +1,6 @@
 # yetplaygo-api
 
-YetPlaygo is a RESTful API made in [Sails](http://sailsjs.org) that should be used with the ng-yetplaygo angular 2 application.
+YetPlaygo is a RESTful API made in [Sails](http://sailsjs.org) that should be used with the [ng-yetplaygo](https://github.com/TheAlexRamirez/ngyetplaygo) angular 2 application.
 
 Yetplaygo is an admin-like tool for amusement parks.
 
