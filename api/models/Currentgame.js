@@ -7,12 +7,18 @@
 
 module.exports = {
   schema: true,
-  
+
   attributes: {
 
     game  : { model: 'game'},
-    users : { model : 'user'},
+    users : { collection : 'user'},
     startsAt  : { type: 'date' },
     endsAt  : { type: 'date'}
+  },
+
+  afterCreate: function(entry, cb) {
+    sails.sockets.broadcast('feed', 'new_entry', entry);
+    console.log(entry);
+    cb();
   }
 };
