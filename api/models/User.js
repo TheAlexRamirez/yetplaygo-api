@@ -45,7 +45,37 @@ var User = {
          cb(err);
        }
      })
-   }
+   },
+   /*generateSalt : function(password) {
+     bcrypt.genSalt(10, function (err, salt) {
+       if(err) return next(err);
+       bcrypt.hash('yetplaygo', salt, function (err, hash) {
+         if(err) return next(err);
+         values.encryptedPassword = hash;
+         next();
+       })
+     })
+   }*/
+   seedData:[
+     {
+       email: 'admin@yetplaygo.com',
+       password : 'yetplaygo',
+       role : 'admin'
+     },{
+       email: 'admin2@yetplaygo.com',
+       password : 'yetplaygo',
+       role : 'admin'
+     },
+     {
+       email: 'user@yetplaygo.com',
+       password : 'yetplaygo',
+       role : 'user'
+     },
+     {
+       email: 'user2@yetplaygo.com',
+       password : 'yetplaygo',
+       role : 'user'
+     }]
 };
 
 module.exports = User;

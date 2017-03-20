@@ -16,6 +16,7 @@ module.exports.bootstrap = function(cb) {
   //cb();
 
   async.series([
- 		Game.seed
+ 		Game.seed,
+    User.seed
  		],cb);
 };

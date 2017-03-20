@@ -14,6 +14,10 @@ Yetplaygo is an admin-like tool for amusement parks.
 
 When you start the application, _Game_ and _User_ objects are bootstrapped in MongoDB.
 
+Users seeded:
+  - Admin: admin@yetplaygo.com | yetplaygo
+  - User: user@yetplaygo.com | yetplaygo
+
 ### Documentation:
 Yetplaygo API routes are based on Sail's Blueprint so [take a look](http://sailsjs.com/documentation/reference/blueprint-api) of the shortcut or RESTful ways to access their methods and models. (Just consider that most of them are protected)
 
